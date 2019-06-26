@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.9980664761bc0dff33740c426ce2a4c5.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("/precache-manifest.4aca6b5c06fa6653b5a4be4d88421be5.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 /* eslint-disable */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
@@ -11,9 +11,6 @@ let storageNotesAout = this.notesReminder;
 console.log(storageNotesAout);
 
 self.addEventListener('sync', event => {
-    let storageNotes = localStorage.getItem('notes');
-
-    console.log(storageNotes);
     if (event.tag === 'send-chats') {
       event.waitUntil(
         getMessagesFromOutbox().then(messages => {
@@ -34,4 +31,7 @@ self.addEventListener('sync', event => {
         })
       );
     }
-  });
+});
+
+
+
