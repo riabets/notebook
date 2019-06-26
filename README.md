@@ -1,4 +1,6 @@
-# notebook_s2
+# Notebook
+
+Firebase link https://notebook-994c8.firebaseapp.com/
 
 ## Project setup
 ```
